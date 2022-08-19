@@ -22,25 +22,25 @@ class SNAKE:
         self.direction = Vector2(0,0)
         self.new_block = False
 
-        self.head_up = pygame.image.load('OneDrive/Documents/Graphics/head_up.png').convert_alpha()
-        self.head_down = pygame.image.load('OneDrive/Documents/Graphics/head_down.png').convert_alpha()
-        self.head_right = pygame.image.load('OneDrive/Documents/Graphics/head_right.png').convert_alpha()
-        self.head_left = pygame.image.load('OneDrive/Documents/Graphics/head_left.png').convert_alpha()
+        self.head_up = pygame.image.load('Graphics/head_up.png').convert_alpha()
+        self.head_down = pygame.image.load('Graphics/head_down.png').convert_alpha()
+        self.head_right = pygame.image.load('Graphics/head_right.png').convert_alpha()
+        self.head_left = pygame.image.load('Graphics/head_left.png').convert_alpha()
 
-        self.tail_up = pygame.image.load('OneDrive/Documents/Graphics/tail_up.png').convert_alpha()
-        self.tail_down = pygame.image.load('OneDrive/Documents/Graphics/tail_down.png').convert_alpha()
-        self.tail_right = pygame.image.load('OneDrive/Documents/Graphics/tail_right.png').convert_alpha()
-        self.tail_left = pygame.image.load('OneDrive/Documents/Graphics/tail_left.png').convert_alpha()
+        self.tail_up = pygame.image.load('Graphics/tail_up.png').convert_alpha()
+        self.tail_down = pygame.image.load('Graphics/tail_down.png').convert_alpha()
+        self.tail_right = pygame.image.load('Graphics/tail_right.png').convert_alpha()
+        self.tail_left = pygame.image.load('Graphics/tail_left.png').convert_alpha()
 
-        self.body_vertical = pygame.image.load('OneDrive/Documents/Graphics/body_vertical.png').convert_alpha()
-        self.body_horizontal = pygame.image.load('OneDrive/Documents/Graphics/body_horizontal.png').convert_alpha()
+        self.body_vertical = pygame.image.load('Graphics/body_vertical.png').convert_alpha()
+        self.body_horizontal = pygame.image.load('Graphics/body_horizontal.png').convert_alpha()
 
-        self.body_tr = pygame.image.load('OneDrive/Documents/Graphics/body_tr.png').convert_alpha()
-        self.body_tl = pygame.image.load('OneDrive/Documents/Graphics/body_tl.png').convert_alpha()
-        self.body_br = pygame.image.load('OneDrive/Documents/Graphics/body_br.png').convert_alpha()
-        self.body_bl = pygame.image.load('OneDrive/Documents/Graphics/body_bl.png').convert_alpha()
+        self.body_tr = pygame.image.load('Graphics/body_tr.png').convert_alpha()
+        self.body_tl = pygame.image.load('Graphics/body_tl.png').convert_alpha()
+        self.body_br = pygame.image.load('Graphics/body_br.png').convert_alpha()
+        self.body_bl = pygame.image.load('Graphics/body_bl.png').convert_alpha()
 
-        self.crunch_sound = pygame.mixer.Sound('OneDrive/Documents/Sound/crunch.wav')
+        self.crunch_sound = pygame.mixer.Sound('Sound/crunch.wav')
     
     def draw_snake(self):
         self.update_head_graphics()
@@ -178,10 +178,10 @@ screen = pygame.display.set_mode((cell_size * cell_num, cell_size * cell_num))
 #set max
 # speed to 60 fps
 clock = pygame.time.Clock()
-apple =  pygame.image.load('OneDrive/Documents/Graphics/apple.png').convert_alpha()
+apple =  pygame.image.load('Graphics/apple.png').convert_alpha()
 
 #game font
-game_font = pygame.font.Font('OneDrive/Documents/Font/PoetsenOne-Regular.ttf', 25)
+game_font = pygame.font.Font('Font/PoetsenOne-Regular.ttf', 25)
 
 #screen update
 SCREEN_UPDATE = pygame.USEREVENT
