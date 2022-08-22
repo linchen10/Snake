@@ -49,7 +49,7 @@ class SNAKE:
         #crunch sound
         self.crunch_sound = pygame.mixer.Sound('OneDrive/Documents/Sound/crunch.wav')
     
-    #draw and update the snake's head graphics and tail graphics
+    #draw and update the snake's head graphics, body graphics, and tail graphics
     def draw_snake(self):
         self.update_head_graphics()
         self.update_tail_graphics()
@@ -63,6 +63,7 @@ class SNAKE:
             elif index ==  len(self.body) - 1:
                 screen.blit(self.tail,block_rect)
             else: 
+                #checks blocks next to each other for body turn graphics
                 previous_block =  self.body[index +1] - block
                 next_block = self.body[index-1] - block
                 if previous_block.x == next_block.x: #x is the same then blocks are vertical
