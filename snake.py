@@ -99,7 +99,7 @@ class SNAKE:
     #stimulate the snake moving by making a copy of the body 
     def move_snake(self):
         if self.new_block == True:
-            body_copy = self.body[:] #includes all elements in the list except the last one
+            body_copy = self.body[:] #includes all elements in the list 
             body_copy.insert(0,body_copy[0] + self.direction) #add one element in the front that's was first element in previous list plus the direction
             self.body = body_copy[:]
             self.new_block = False
